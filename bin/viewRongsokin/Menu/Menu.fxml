@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rongsokin.MenuController">
+    <MenuBar>
+        <Menu text="Beranda">
+            <MenuItem text="Ringkasan" onAction="#showRingkasan"/>
+            <MenuItem text="Berita" onAction="#showBerita"/>
+            <MenuItem text="Fitur Unggulan" onAction="#showFiturUnggulan"/>
+        </Menu>
+        <Menu text="Cari Barang">
+            <MenuItem text="Berdasarkan Kategori" onAction="#searchByCategory"/>
+            <MenuItem text="Berdasarkan Lokasi" onAction="#searchByLocation"/>
+            <MenuItem text="Berdasarkan Kata Kunci" onAction="#searchByKeyword"/>
+        </Menu>
+        <Menu text="Jual Barang">
+            <MenuItem text="Unggah Barang" onAction="#uploadBarang"/>
+            <MenuItem text="Lihat Barang Saya" onAction="#lihatBarangSaya"/>
+        </Menu>
+        <Menu text="Daftar Pengepul">
+            <MenuItem text="Tampilkan Daftar" onAction="#showDaftarPengepul"/>
+            <MenuItem text="Filter Daftar" onAction="#filterDaftarPengepul"/>
+        </Menu>
+        <Menu text="Pesanan Saya">
+            <MenuItem text="Pesanan Penjualan" onAction="#pesananPenjualan"/>
+            <MenuItem text="Pesanan Pembelian" onAction="#pesananPembelian"/>
+        </Menu>
+        <Menu text="Profil Saya">
+            <MenuItem text="Pengaturan Profil" onAction="#pengaturanProfil"/>
+            <MenuItem text="Pengaturan Keamanan" onAction="#pengaturanKeamanan"/>
+            <MenuItem text="Riwayat Transaksi" onAction="#riwayatTransaksi"/>
+        </Menu>
+        <Menu text="Bantuan">
+            <MenuItem text="Panduan Penggunaan" onAction="#panduanPenggunaan"/>
+            <MenuItem text="Kontak Dukungan" onAction="#kontakDukungan"/>
+        </Menu>
+        <Menu text="Keluar">
+            <MenuItem text="Logout" onAction="#logout"/>
+            <MenuItem text="Keluar dari Aplikasi" onAction="#exit"/>
+        </Menu>
+    </MenuBar>
+</VBox>
